@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mmp",
+  "name": "Minecraft Mod Project",
+  "description": "A Minecraft mod for my class.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Dan Christensen"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
