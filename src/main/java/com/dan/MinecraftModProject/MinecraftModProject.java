@@ -2,6 +2,7 @@ package com.dan.MinecraftModProject;
 
 import com.dan.MinecraftModProject.init.ModBlocks;
 import com.dan.MinecraftModProject.init.ModItems;
+import com.dan.MinecraftModProject.init.ModTools;
 import com.dan.MinecraftModProject.proxy.CommonProxy;
 import com.dan.MinecraftModProject.utils.Utils;
 import net.minecraftforge.fml.common.Mod;
@@ -27,8 +28,10 @@ public class MinecraftModProject {
     public void preInit(FMLPreInitializationEvent event) {
         Utils.getLogger().info("Pre-Initialization");
         ModItems.init();
+        ModTools.init();
         ModBlocks.init();
         ModItems.register();
+        ModTools.register();
         ModBlocks.register();
 
         proxy.registerRenders();
