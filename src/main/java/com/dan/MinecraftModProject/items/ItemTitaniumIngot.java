@@ -1,6 +1,5 @@
 package com.dan.MinecraftModProject.items;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
@@ -12,6 +11,5 @@ public class ItemTitaniumIngot extends Item {
     public ItemTitaniumIngot(String unlocalizedName, String regestryName) {
         this.setUnlocalizedName(unlocalizedName);
         this.setRegistryName(regestryName);
-        this.setCreativeTab(CreativeTabs.MATERIALS);
     }
 }

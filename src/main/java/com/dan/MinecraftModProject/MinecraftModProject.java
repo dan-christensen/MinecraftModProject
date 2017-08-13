@@ -1,10 +1,13 @@
 package com.dan.MinecraftModProject;
 
+import com.dan.MinecraftModProject.creativetabs.TabMMP;
+import com.dan.MinecraftModProject.handlers.HandlerRecipie;
 import com.dan.MinecraftModProject.init.ModBlocks;
 import com.dan.MinecraftModProject.init.ModItems;
 import com.dan.MinecraftModProject.init.ModTools;
 import com.dan.MinecraftModProject.proxy.CommonProxy;
 import com.dan.MinecraftModProject.utils.Utils;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,6 +23,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class MinecraftModProject {
     @Mod.Instance(Reference.MODID)
     public static MinecraftModProject instance;
+    public static final CreativeTabs MMP = new TabMMP("mmp");
 
     @SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS, clientSide = Reference.CLIENT_PROXY_CLASS)
     public static CommonProxy proxy;
@@ -40,6 +44,8 @@ public class MinecraftModProject {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         Utils.getLogger().info("Initialization");
+        HandlerRecipie.registerCraftingRecipes();
+        HandlerRecipie.registerSmeltingRecipes();
     }
 
     @Mod.EventHandler

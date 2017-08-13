@@ -1,5 +1,6 @@
 package com.dan.MinecraftModProject.init;
 
+import com.dan.MinecraftModProject.MinecraftModProject;
 import com.dan.MinecraftModProject.Reference;
 import com.dan.MinecraftModProject.items.ItemTitaniumIngot;
 import com.dan.MinecraftModProject.utils.Utils;
@@ -30,6 +31,7 @@ public class ModItems {
     }
 
     public static void registerItem(Item item){
+        item.setCreativeTab(MinecraftModProject.MMP);
         ForgeRegistries.ITEMS.register(item);
         Utils.getLogger().info("Registered item " + item.getUnlocalizedName().substring(5));
     }

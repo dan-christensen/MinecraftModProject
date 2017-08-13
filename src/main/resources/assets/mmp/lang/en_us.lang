@@ -1,3 +1,11 @@
 tile.titanium_ore.name=Titanium Ore
 
 item.titanium_ingot.name=Titanium Ingot
+
+itemGroup.mmp=Minecraft Mod Project
+
+item.titanium_pickaxe.name=Titanium Pickaxe
+item.titanium_axe.name=Titanium Axe
+item.titanium_shovel.name=Titanium Shovel
+item.titanium_hoe.name=Titanium Hoe
+item.titanium_sword.name=Titanium Sword

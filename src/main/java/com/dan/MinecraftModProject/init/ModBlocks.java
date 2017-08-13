@@ -1,5 +1,6 @@
 package com.dan.MinecraftModProject.init;
 
+import com.dan.MinecraftModProject.MinecraftModProject;
 import com.dan.MinecraftModProject.Reference;
 import com.dan.MinecraftModProject.blocks.BlockTitaniumOre;
 import com.dan.MinecraftModProject.utils.Utils;
@@ -32,6 +33,7 @@ public class ModBlocks {
     }
 
     public static void registerBlock(Block block) {
+        block.setCreativeTab(MinecraftModProject.MMP);
         ForgeRegistries.BLOCKS.register(block);
         ForgeRegistries.ITEMS.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
         Utils.getLogger().info("Registered block " + block.getUnlocalizedName().substring(5));
