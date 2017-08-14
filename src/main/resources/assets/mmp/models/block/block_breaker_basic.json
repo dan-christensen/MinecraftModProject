@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mmp:blocks/block_breaker_basic"
+  }
+}

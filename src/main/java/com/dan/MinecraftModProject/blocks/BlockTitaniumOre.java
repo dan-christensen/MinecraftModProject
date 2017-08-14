@@ -14,10 +14,10 @@ import java.util.Random;
  * Created by dan on 8/11/17.
  */
 public class BlockTitaniumOre extends Block{
-    public BlockTitaniumOre(String unlocalizedName, String registryName) {
+    public BlockTitaniumOre(String unlocalizedName) {
         super(Material.ROCK);
         this.setUnlocalizedName(unlocalizedName);
-        this.setRegistryName(new ResourceLocation(Reference.MODID, registryName));
+        this.setRegistryName(new ResourceLocation(Reference.MODID, unlocalizedName));
         this.setHardness(20);
         this.setResistance(20);
     }

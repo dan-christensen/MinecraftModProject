@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "type=basic": {"model": "mmp:block_breaker_basic"},
+    "type=advanced": {"model": "mmp:block_breaker_advanced"}
+  }
+}

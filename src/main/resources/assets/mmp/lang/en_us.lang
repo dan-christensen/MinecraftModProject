@@ -1,4 +1,6 @@
 tile.titanium_ore.name=Titanium Ore
+tile.block_breaker_basic.name=Block Breaker (Basic)
+tile.block_breaker_advanced.name=Block Breaker (Advanced)
 
 item.titanium_ingot.name=Titanium Ingot
 
@@ -9,6 +11,9 @@ item.titanium_axe.name=Titanium Axe
 item.titanium_shovel.name=Titanium Shovel
 item.titanium_hoe.name=Titanium Hoe
 item.titanium_sword.name=Titanium Sword
+
+item.chip_basic.name=Basic Chip
+item.chip_advanced.name=Advanced Chip
 
 item.titanium_helmet.name=Titanium Helmet
 item.titanium_chestplate.name=Titanium Chestplate

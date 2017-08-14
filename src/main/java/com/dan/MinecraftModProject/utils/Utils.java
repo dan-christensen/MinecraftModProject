@@ -17,4 +17,12 @@ public class Utils {
         }
         return logger;
     }
+
+    public static void printRegistered(String type, String item) {
+        getLogger().info("Registered " + type + ": " + item);
+    }
+
+    public static void printRegisteredRender(String item) {
+        getLogger().info("Registered render for: " + item);
+    }
 }

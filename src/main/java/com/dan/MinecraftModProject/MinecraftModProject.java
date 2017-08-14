@@ -48,6 +48,7 @@ public class MinecraftModProject {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         Utils.getLogger().info("Initialization");
+        proxy.registerModelBakeryVariants();
         HandlerRecipe.registerCraftingRecipes();
         HandlerRecipe.registerSmeltingRecipes();
         HandlerOreDicionary.registerOreDictionary();

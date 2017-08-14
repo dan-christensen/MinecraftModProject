@@ -52,12 +52,12 @@ public class ModTools {
     public static void registerTool(Item tool){
         tool.setCreativeTab(MinecraftModProject.MMP);
         ForgeRegistries.ITEMS.register(tool);
-        Utils.getLogger().info("Registered tool: " + tool.getUnlocalizedName().substring(5));
+        Utils.printRegistered("tool", tool.getUnlocalizedName().substring(5));
     }
 
     public static void registerRender(Item tool) {
         ModelLoader.setCustomModelResourceLocation(tool, 0, new ModelResourceLocation(new ResourceLocation(Reference.MODID, tool.getUnlocalizedName().substring(5)), "inventory"));
-        Utils.getLogger().info("Registered render for " + tool.getUnlocalizedName().substring(5));
+        Utils.printRegisteredRender(tool.getUnlocalizedName().substring(5));
     }
 
 }

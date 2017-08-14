@@ -51,11 +51,11 @@ public class ModArmor {
     public static void registerArmor(Item armor) {
         armor.setCreativeTab(MinecraftModProject.MMP);
         ForgeRegistries.ITEMS.register(armor);
-        Utils.getLogger().info("Registered armor: " + armor.getUnlocalizedName().substring(5));
+        Utils.printRegistered("armor", armor.getUnlocalizedName().substring(5));
     }
 
     public static void registerRender(Item armor) {
         ModelLoader.setCustomModelResourceLocation(armor, 0, new ModelResourceLocation(new ResourceLocation(Reference.MODID, armor.getUnlocalizedName().substring(5)), "inventory"));
-        Utils.getLogger().info("Registered render for: " + armor.getUnlocalizedName().substring(5));
+        Utils.printRegisteredRender(armor.getUnlocalizedName().substring(5));
     }
 }

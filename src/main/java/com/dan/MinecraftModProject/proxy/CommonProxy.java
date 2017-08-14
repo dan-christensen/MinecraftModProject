@@ -7,4 +7,8 @@ package com.dan.MinecraftModProject.proxy;
 public class CommonProxy {
     public void registerRenders() {
     }
+
+    public void registerModelBakeryVariants() {
+
+    }
 }

@@ -1,6 +1,8 @@
 package com.dan.MinecraftModProject.items;
 
+import com.dan.MinecraftModProject.Reference;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 
 /**
  * com.dan.MinecraftModProject.items.MinecraftModProject
@@ -8,8 +10,8 @@ import net.minecraft.item.Item;
  */
 public class ItemTitaniumIngot extends Item {
 
-    public ItemTitaniumIngot(String unlocalizedName, String regestryName) {
+    public ItemTitaniumIngot(String unlocalizedName) {
         this.setUnlocalizedName(unlocalizedName);
-        this.setRegistryName(regestryName);
+        this.setRegistryName(new ResourceLocation(Reference.MODID, unlocalizedName));
     }
 }
