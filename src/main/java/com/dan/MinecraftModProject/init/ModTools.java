@@ -49,15 +49,15 @@ public class ModTools {
         registerRender(titaniumSword);
     }
 
-    public static void registerTool(Item item){
-        item.setCreativeTab(MinecraftModProject.MMP);
-        ForgeRegistries.ITEMS.register(item);
-        Utils.getLogger().info("Registered item " + item.getUnlocalizedName().substring(5));
+    public static void registerTool(Item tool){
+        tool.setCreativeTab(MinecraftModProject.MMP);
+        ForgeRegistries.ITEMS.register(tool);
+        Utils.getLogger().info("Registered tool: " + tool.getUnlocalizedName().substring(5));
     }
 
-    public static void registerRender(Item item) {
-        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(Reference.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
-        Utils.getLogger().info("Registered render for " + item.getUnlocalizedName().substring(5));
+    public static void registerRender(Item tool) {
+        ModelLoader.setCustomModelResourceLocation(tool, 0, new ModelResourceLocation(new ResourceLocation(Reference.MODID, tool.getUnlocalizedName().substring(5)), "inventory"));
+        Utils.getLogger().info("Registered render for " + tool.getUnlocalizedName().substring(5));
     }
 
 }

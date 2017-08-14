@@ -18,6 +18,8 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
  */
 public class ModBlocks {
 
+//    public static final PropertyEnum TYPE = PropertyEnum.create("type", OreType.class);
+
     public static Block titaniumOre;
 
     public static void init() {

@@ -1,7 +1,9 @@
 package com.dan.MinecraftModProject;
 
 import com.dan.MinecraftModProject.creativetabs.TabMMP;
-import com.dan.MinecraftModProject.handlers.HandlerRecipie;
+import com.dan.MinecraftModProject.handlers.HandlerOreDicionary;
+import com.dan.MinecraftModProject.handlers.HandlerRecipe;
+import com.dan.MinecraftModProject.init.ModArmor;
 import com.dan.MinecraftModProject.init.ModBlocks;
 import com.dan.MinecraftModProject.init.ModItems;
 import com.dan.MinecraftModProject.init.ModTools;
@@ -33,9 +35,11 @@ public class MinecraftModProject {
         Utils.getLogger().info("Pre-Initialization");
         ModItems.init();
         ModTools.init();
+        ModArmor.init();
         ModBlocks.init();
         ModItems.register();
         ModTools.register();
+        ModArmor.register();
         ModBlocks.register();
 
         proxy.registerRenders();
@@ -44,8 +48,9 @@ public class MinecraftModProject {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         Utils.getLogger().info("Initialization");
-        HandlerRecipie.registerCraftingRecipes();
-        HandlerRecipie.registerSmeltingRecipes();
+        HandlerRecipe.registerCraftingRecipes();
+        HandlerRecipe.registerSmeltingRecipes();
+        HandlerOreDicionary.registerOreDictionary();
     }
 
     @Mod.EventHandler
